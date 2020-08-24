@@ -52,7 +52,7 @@ export default function CustomizedSlider({
   min = 0,
   max = 100,
   step = 1,
-  defaultValue = 20,
+  value,
   onchangeValue
 }) {
   const classes = useStyles();
@@ -68,7 +68,7 @@ export default function CustomizedSlider({
         min={min}
         max={max}
         valueLabelDisplay="auto"
-        defaultValue={defaultValue}
+        value={value}
         onChange={(e, newValue) => {
           onchangeValue(newValue);
         }}

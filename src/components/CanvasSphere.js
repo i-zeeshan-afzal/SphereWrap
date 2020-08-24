@@ -12,6 +12,7 @@ class CanvasSphere extends Component {
   }
   componentDidMount = () => {
     this.initCanvas();
+    this.props.onCreateCanvas(null);
   };
   initCanvas = () => {};
   componentDidUpdate = () => {
